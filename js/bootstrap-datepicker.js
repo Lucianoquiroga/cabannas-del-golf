@@ -1417,7 +1417,7 @@
 	];
 	$.fn.datepicker.Constructor = Datepicker;
 	var dates = $.fn.datepicker.dates = {
-		en: {
+		/*en: {
 			days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
 			daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
 			daysMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
@@ -1425,6 +1425,15 @@
 			monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
 			today: "Today",
 			clear: "Clear"
+		},*/
+		en: {
+			days: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"],
+			daysShort: ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"],
+			daysMin: ["Do", 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sá', 'Do'],
+			months: ["Enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"],
+			monthsShort: ["Ene", "Feb", "Mar", "Abr", "Mayo", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+			today: "Hoy",
+			clear: "limpiar"
 		}
 	};
 
