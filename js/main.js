@@ -273,13 +273,13 @@
 
 
   $('#book_date').datepicker({
-	  'format': 'm/d/yyyy',
+	  'format': 'd/m/yyyy',
 	  'autoclose': true
 	});
 	$('#book_time').timepicker();
 
   $('#book_date_end').datepicker({
-	'format': 'm/d/yyyy',
+	'format': 'd/m/yyyy',
 	'autoclose': true
 	});
 
