@@ -500,6 +500,14 @@ pre {
   padding-right: 15px;
   padding-left: 15px; }
 
+@media only screen and (max-width: 576px) {
+  .col-phone {
+    position: relative !important;
+    width: 50% !important;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+}
 .col {
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
@@ -8661,6 +8669,10 @@ h1, h2, h3, h4, h5,
 .featured {
   padding-top: 30px;
   width: 100%; }
+
+.color-title{
+  color: black !important; 
+}  
   @media (min-width: 992px) {
     .featured {
       /*margin-top: -230px;*/
@@ -8692,7 +8704,12 @@ h1, h2, h3, h4, h5,
         margin-bottom: 0; }
         @media (min-width: 992px) {
           .featured .featured-menus .text p {
-            color: rgba(255, 255, 255, 0.8); } }
+            color: rgba(255, 255, 255, 0.8); 
+          }
+          .color-title{
+            color: white !important; 
+          }    
+        }
     .featured .featured-menus .menu-img {
       width: 90px;
       height: 90px;
@@ -9700,7 +9717,7 @@ textarea.form-control {
     position: relative;
     margin-bottom: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #176f32;
     list-style: none; }
     .categories li:last-child, .sidelink li:last-child {
       margin-bottom: 0;
