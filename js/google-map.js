@@ -48,7 +48,7 @@ function init() {
     marker2.setMap(map);
     //marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
     
-    var key = "KEY";
+    var key = "AIzaSyAnCNNQt_Y5HFHneYP823-XEwxoXuZqspQ";
     
     var addresses = "Jerónimo Luis De Cabrera 67, X5000GVB Córdoba";
 

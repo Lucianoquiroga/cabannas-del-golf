@@ -8575,7 +8575,8 @@ h1, h2, h3, h4, h5,
     display: inline-block; }
 
 .bg-light {
-  background: #fafafa !important; }
+  /*background: #fafafa !important; }*/
+  background: #f2f0fc !important; }
 
 .bg-white {
   background: #fff !important; }
@@ -8804,7 +8805,8 @@ h1, h2, h3, h4, h5,
       font-weight: 600;
       position: relative;
       display: inline-block;
-      border: 1px solid transparent;
+      border: 1px solid;
+      border-color: green;
       background: #fff;
       width: 16.6%;
       -webkit-border-radius: 0;
@@ -8844,7 +8846,7 @@ h1, h2, h3, h4, h5,
       @media (max-width: 767.98px) {
         .ftco-search .nav-pills .nav-link {
           width: 100%;
-          background: #176f32;
+          /*background: #176f32;*/
           margin-bottom: 4px; } }
   .ftco-search .tab-content {
     -webkit-border-radius: 0;
@@ -9035,10 +9037,10 @@ h1, h2, h3, h4, h5,
     margin-bottom: 5px;
     font-size: 14px; }
     .blog-entry .meta > div a {
-      color: rgba(0, 0, 0, 0.3);
+      color: rgba(0, 0, 0, 0.705);
       font-size: 15px; }
       .blog-entry .meta > div a:hover {
-        color: #cccccc; }
+        color: #176f32; }
 
 .block-27 ul {
   padding: 0;
@@ -9087,7 +9089,7 @@ textarea.form-control {
   font-size: 24px; }
 
 .ftco-section {
-  padding: 7em 0;
+  padding: 4em 0;
   position: relative; }
 
 .ftco-no-pt {
