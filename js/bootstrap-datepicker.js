@@ -1678,3 +1678,26 @@
 	});
 
 }(window.jQuery));
+function sendEmail() {
+
+	var name = document.getElementById('name_form').value;
+	var email = document.getElementById('email_form').value;
+	var phone = document.getElementById('phone_form').value;
+	var city = document.getElementById('city_form').value;
+	var date_init = document.getElementById('book_date').value;
+	var date_end = document.getElementById('book_date_end').value;
+	var message_form = document.getElementById('message_form').value;
+
+
+	Email.send({
+	Host: "smtp.gmail.com",
+	Username: "@gmail.com",
+	Password: "",
+	To: '@gmail.com',
+	From: email,
+	Subject : 'Reserva a nombre de ' + name + ' (' + date_init + ' - ' + date_end + ')' ,
+	Body: 'Solicitud de reserva por ' + name + '.\n' + 'Telefono: ' + phone + '.\n' + 'Ciudad: ' + city + '.\n' + 'Fecha estimada de reservacion\n' + '- Desde:' + date_init + '\n' + '- Hasta: ' + date_end + '\n' + 'Mensaje del cliente: ' + message_form,
+	}).then(
+		message => alert("mail sent")
+	);
+}

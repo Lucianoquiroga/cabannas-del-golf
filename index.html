@@ -382,25 +382,25 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="">Nombre</label>
-                    <input type="text" class="form-control" placeholder="">
+                    <input type="text" class="form-control" id="name_form" placeholder="">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="">Email</label>
-                    <input type="text" class="form-control" placeholder="">
+                    <input type="text" class="form-control" id="email_form" placeholder="">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="">Telefono</label>
-                    <input type="text" class="form-control" placeholder="">
+                    <input type="text" class="form-control" id="phone_form" placeholder="">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="">Ciudad</label>
-                    <input type="text" class="form-control" placeholder="">
+                    <input type="text" class="form-control" id="city_form" placeholder="">
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -417,13 +417,14 @@
                 </div>
                 <div class="col-md-12">
                   <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Mensaje</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="message_form">Mensaje</label>
+                    <textarea class="form-control" id="message_form" rows="3"></textarea>
                   </div>
                 </div>
                 <div class="col-md-12 mt-3">
                   <div class="form-group text-center">
-                    <input type="submit" value="Enviar" class="btn btn-primary py-3 px-5">
+                    <input type="submit" value="Enviar" class="btn btn-primary py-3 px-5"/>
+                    <input type="button" value="Enviar correo electrónico" onclick="sendEmail()"/>
                   </div>
                 </div>
               </div>
@@ -514,6 +515,7 @@
   <script src="js/jquery.timepicker.min.js"></script>
   <script src="js/scrollax.min.js"></script>
   <script src="js/main.js"></script>
-    
+  <script src="js/smtp.js"> </script>
+  <script src="js/send-email.js"> </script>
   </body>
 </html>
