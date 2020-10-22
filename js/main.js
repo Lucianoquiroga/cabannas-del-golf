@@ -272,18 +272,17 @@
   });
 
 
-  $('#book_date').datepicker({
-	  'format': 'd/m/yyyy',
-	  'autoclose': true
-	});
-	$('#book_time').timepicker();
-
-  $('#book_date_end').datepicker({
-	'format': 'd/m/yyyy',
-	'autoclose': true
+	$('#book_date').datepicker({
+		'format': 'dd/mm/yyyy',
+		'autoclose': true,
+		'startDate': new Date()
 	});
 
-
+	$('#book_date_end').datepicker({
+		'format': 'dd/mm/yyyy',
+		'autoclose': true,
+		'startDate': new Date()
+	});
 
 })(jQuery);
 

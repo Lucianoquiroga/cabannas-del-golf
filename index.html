@@ -169,53 +169,6 @@
 			</div>
 		</section>
 
-		
-		<!--<section class="ftco-section ftco-counter img ftco-no-pt" id="section-counter">
-    	<div class="container">
-    		<div class="row d-md-flex">
-    			<div class="col-md-9">
-    				<div class="row d-md-flex align-items-center">
-		          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18">
-		              <div class="text">
-		                <strong class="number" data-number="6" style="color: #176f32;">0</strong>
-		                <span>Cabañas</span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18">
-		              <div class="text">
-		                <strong class="number" data-number="100">0</strong>
-		                <span>Menus/Dish</span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18">
-		              <div class="text">
-		                <strong class="number" data-number="50">0</strong>
-		                <span>Staffs</span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18">
-		              <div class="text">
-		                <strong class="number" data-number="15000">0</strong>
-		                <span>Happy Customers</span>
-		              </div>
-		            </div>
-		          </div>
-	          </div>
-          </div>
-          <div class="col-md-3 text-center text-md-left">
-          	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-          </div>
-        </div>
-    	</div>
-    </section>-->
-
     <section class="ftco-section bg-light" style="padding: 5em 0 !important;">
 			<div class="container">
 				<div class="row justify-content-center mb-5 pb-2">
@@ -377,54 +330,65 @@
 	          	<span class="subheading" style="color: #176f32;">Contactanos</span>
 	            <h2 class="mb-4">Solicitar reservacion</h2>
 	          </div>
-            <form action="#">
-              <div class="row">
+            <form class="needs-validation" novalidate>
+              <div class="form-row">
                 <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="">Nombre</label>
-                    <input type="text" class="form-control" id="name_form" placeholder="">
+                  <label for="name_form">Nombre <span style="color: red;">*</span></label>
+                  <input type="text" class="form-control" id="name_form" required>
+                  <div class="invalid-feedback">
+                    Por favor ingrese un Nombre.
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="">Email</label>
-                    <input type="text" class="form-control" id="email_form" placeholder="">
+                  <label for="email_form">Email <span style="color: red;">*</span></label>
+                  <input type="email" class="form-control" id="email_form" required>
+                  <div class="invalid-feedback">
+                    Por favor ingrese un Email.
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="">Telefono</label>
-                    <input type="text" class="form-control" id="phone_form" placeholder="">
+                  <label for="phone_form">Teléfono <span style="color: red;">*</span></label>
+                  <input type="number" class="form-control" id="phone_form" required>
+                  <div class="invalid-feedback">
+                    Por favor ingrese un Teléfono.
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="">Ciudad</label>
-                    <input type="text" class="form-control" id="city_form" placeholder="">
+                  <label for="city_form">Ciudad <span style="color: red;">*</span></label>
+                  <input type="text" class="form-control" id="city_form" required>
+                  <div class="invalid-feedback">
+                    Por favor ingrese una Ciudad.
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="">Desde</label>
-                    <input type="text" class="form-control" id="book_date" placeholder="(DD/MM/AAAA)">
+                  <label for="book_date">Desde <span style="color: red;">*</span></label>
+                  <input type="text" class="form-control" id="book_date" placeholder="(DD/MM/AAAA)" autocomplete="off" required>
+                  <div class="invalid-feedback">
+                    Por favor ingrese una Fecha.
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="">Hasta</label>
-                    <input type="text" class="form-control" id="book_date_end" placeholder="(DD/MM/AAAA)">
+                  <label for="book_date_end">Hasta <span style="color: red;">*</span></label>
+                  <input type="text" class="form-control" id="book_date_end" placeholder="(DD/MM/AAAA)" autocomplete="off" required>
+                  <div class="invalid-feedback">
+                    Por favor ingrese una Fecha.
+                  </div>
+                </div>
+                <div class="col-md-12 mt-2" id="alert-error" hidden>
+                  <div class="alert alert-danger" style="margin-bottom: 0px !important" role="alert">
+                    <strong>Fechas:</strong> Hasta no puede ser menor a Desde!
                   </div>
                 </div>
                 <div class="col-md-12">
-                  <div class="form-group">
-                    <label for="message_form">Mensaje</label>
-                    <textarea class="form-control" id="message_form" rows="3"></textarea>
-                  </div>
+                  <label for="message_form">Mensaje</label>
+                  <textarea class="form-control" id="message_form" rows="3"></textarea>
                 </div>
                 <div class="col-md-12 mt-3">
-                  <div class="form-group text-center">
-                    <input type="submit" value="Enviar" class="btn btn-primary py-3 px-5"/>
-                    <input type="button" value="Enviar correo electrónico" onclick="sendEmail()"/>
+                  <div class="form-group text-center" id="btn-submit">
+                    <input value="Enviar" class="btn btn-primary py-3 px-5" type="submit"/>
+                  </div>
+                  <div class="alert alert-success" role="alert" id="alert-success" hidden>
+                    Le confirmamos que hemos recibido su consulta. Nos comunicaremos con usted brindándole una respuesta a su solicitud.
                   </div>
                 </div>
               </div>
@@ -510,12 +474,13 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/jquery.timepicker.min.js"></script>
   <script src="js/scrollax.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/smtp.js"> </script>
-  <script src="js/send-email.js"> </script>
+  <script src="js/send-email.js"></script>
+  <script src="js/form-controls.js"></script>
+  <script src="js/compare-date.js"></script>
   </body>
 </html>
