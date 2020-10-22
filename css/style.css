@@ -8403,13 +8403,14 @@ h1, h2, h3, h4, h5,
     opacity: .5;
     background: #000000; }
   .hero-wrap.hero-wrap-2 {
-    height: 450px; }
+    height: 450px;
+    font-family: "Cardo"; }
     .hero-wrap.hero-wrap-2 .slider-text {
       height: 450px; }
       .hero-wrap.hero-wrap-2 .slider-text .bread {
         font-weight: 900;
         color: #fff;
-        font-size: 50px; }
+        font-size: 47px; }
       .hero-wrap.hero-wrap-2 .slider-text .breadcrumbs {
         text-transform: uppercase;
         font-size: 13px;
@@ -8492,7 +8493,7 @@ h1, h2, h3, h4, h5,
           /*color: #c8a97e;*/
           color: #176f32;
           font-weight: normal;
-          font-family: "Great Vibes", cursive;
+          font-family: "Cardo";
           margin-bottom: 0;
           line-height: 1; }
         .owl-carousel.home-slider .slider-item .slider-text h1 {
