@@ -8404,7 +8404,7 @@ h1, h2, h3, h4, h5,
     background: #000000; }
   .hero-wrap.hero-wrap-2 {
     height: 450px;
-    font-family: "Cardo"; }
+    font-family: "cardoregular"; }
     .hero-wrap.hero-wrap-2 .slider-text {
       height: 450px; }
       .hero-wrap.hero-wrap-2 .slider-text .bread {
@@ -8420,7 +8420,10 @@ h1, h2, h3, h4, h5,
           border-bottom: 2px solid rgba(255, 255, 255, 0.1); }
           .hero-wrap.hero-wrap-2 .slider-text .breadcrumbs span a {
             color: #fff; }
-
+.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item{
+  -ms-touch-action: auto;
+  touch-action: auto;
+}
 .owl-carousel {
   position: relative; }
   .owl-carousel .owl-item {
@@ -8493,7 +8496,7 @@ h1, h2, h3, h4, h5,
           /*color: #c8a97e;*/
           color: #176f32;
           font-weight: normal;
-          font-family: "Cardo";
+          font-family: "cardoregular";
           margin-bottom: 0;
           line-height: 1; }
         .owl-carousel.home-slider .slider-item .slider-text h1 {
@@ -8506,6 +8509,9 @@ h1, h2, h3, h4, h5,
           text-transform: uppercase;
           font-weight: 600; }
           @media (max-width: 991.98px) {
+            .owl-carousel.home-slider .slider-item .slider-text .subheading {
+              font-size: 50px;
+            }
             .owl-carousel.home-slider .slider-item .slider-text h1 {
               font-size: 25px; } }
         .owl-carousel.home-slider .slider-item .slider-text p {
@@ -9842,3 +9848,12 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+@font-face {
+    font-family: 'cardoregular';
+    src: url('cardo-regular-webfont.woff2') format('woff2'),
+          url('cardo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
