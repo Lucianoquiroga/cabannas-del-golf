@@ -1,5 +1,7 @@
-<?php 
-    $con = mysqli_connect('localhost', 'root', '', 'cabannas_golf');
+<?php
+
+    $con = mysqli_connect('', '', '', '');
+
     if ($con) {
 
         $name = $_POST['name'];
@@ -10,24 +12,19 @@
         $date_end = date('Y-m-d', strtotime(str_replace("/","-",$_POST['date_end'])));
         $message_user = $_POST['message_user'];
 
-        //Adding controls in inputs
+        if ($name === null || $email === null || $phone === null || $city  === null || $date_start  === null || $date_end  === null ) {
+            return false;
+        }
 
         $sql = "INSERT INTO message 
-        (name, email, phone, city, date_start, date_end, message_user)
+        (name, email, phone, city, date_start, date_end, message_user, send_email)
         VALUES
-        ('$name', '$email', '$phone', '$city', '$date_start', '$date_end', '$message_user')";
+        ('$name', '$email', '$phone', '$city', '$date_start', '$date_end', '$message_user', 'NO')";
         
         $result = mysqli_query($con, $sql);
 
         if ($result) {
-            /*$to = 'cabanasdelgolf@gmail.com';
-            $subject = 'Reserva a nombre de Luciano Quiroga (1/10/2020 - 23/10/2020)';
-            $txt = 'Solicitud de reserva por Luciano Quiroga. Telefono: 2612160309. Ciudad: Mendoza. Fecha estimada de reservacion - Desde:1/10/2020 - Hasta: 23/10/2020 Mensaje del cliente: Hola queria saber el precio exacto de las cabañas standars';
-            $headers = 'From: '.$email;
-
-            mail($to,$subject,$txt,$headers);*/
-
-            echo true;
+            echo $con->insert_id;
         } else {
             echo false;
         }
