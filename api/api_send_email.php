@@ -43,7 +43,7 @@
         
         // Content
         $subject = 'Reserva a nombre de ' . $name . ' ('. $date_start .' - '. $date_end .')';
-        $body = "Solicitud de reserva por ". $name .".\nTeléfono: " . $phone . ".\nCiudad: " . $city .".\n\nFecha estimada de reservación\n- Desde: ". $date_start ."\n- Hasta: ". $date_end ."\n\nMensaje del cliente:\n". $message_user ."";
+        $body = "Solicitud de reserva por ". $name .".\n Email: ". $email .".\nTeléfono: " . $phone . ".\nCiudad: " . $city .".\n\nFecha estimada de reservación\n- Desde: ". $date_start ."\n- Hasta: ". $date_end ."\n\nMensaje del cliente:\n". $message_user ."";
         //$mail->isHTML(true);
         $mail->Subject = $subject;
         $mail->Body    = $body;
